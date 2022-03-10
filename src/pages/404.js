@@ -1,13 +1,14 @@
 import React from "react"
 import Layout from "../components/Layout"
-function HomePage() {
+function ErrorPage() {
   return (
     <Layout>
       <div>
-        <h2>Hello World</h2>
+        <h2>404</h2>
+        <p>The requested page doesn't exist</p>
       </div>
     </Layout>
   )
 }
 
-export default HomePage
+export default ErrorPage
