@@ -1,10 +1,11 @@
 import React from "react"
 import Navbar from "./Navbar"
+import styles from "../styles/global.css"
 function Layout({ children }) {
   return (
-    <div>
+    <div className="layout">
       <Navbar />
-      {children}
+      <div className="content">{children}</div>
       <footer>
         <p>All copyrights &copy; 2022</p>
       </footer>
