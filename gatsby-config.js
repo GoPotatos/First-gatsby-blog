@@ -8,12 +8,19 @@ const path = require("path")
 module.exports = {
   /* Your site config here */
   plugins: [
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     "gatsby-transformer-remark",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "projects",
         path: path.resolve(`${__dirname}/src/projects`),
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: path.resolve(`${__dirname}/src/images`),
       },
     },
   ],
